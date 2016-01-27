@@ -11,15 +11,15 @@ $(document).ready( function() {
   });
 
   $(document).keydown(function(event) {
-      var pressed_key = (event.keyCode ? event.keyCode : event.which);
-      key = keycodes[pressed_key];
-      $("." + key).trigger( "click" );
-      $("." + key).addClass('active');
-    });
+    var pressed_key = (event.keyCode ? event.keyCode : event.which);
+    key = keycodes[pressed_key];
+    $("." + key).trigger( "click" );
+    $("." + key).addClass('active');
+  });
 
   $(document).keyup(function(event) {
-      var pressed_key = (event.keyCode ? event.keyCode : event.which);
-      key = keycodes[pressed_key];
-        $("." + key).removeClass('active');
-      });
+    var pressed_key = (event.keyCode ? event.keyCode : event.which);
+    key = keycodes[pressed_key];
+      $("." + key).removeClass('active');
+    });
 });
